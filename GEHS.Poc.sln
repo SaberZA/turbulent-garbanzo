@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEHS.Poc.WebApi", "GEHS.Poc.WebApi\GEHS.Poc.WebApi.csproj", "{CBE0E86A-9E21-40B7-8D04-8394C7BC9D0F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Gehs.Poc.Website", "http://localhost:17537", "{55E01D0A-D714-484A-8A73-26B8DEFA754E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_17537"
+		Debug.AspNetCompiler.PhysicalPath = "Gehs.Poc.Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17537\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_17537"
+		Release.AspNetCompiler.PhysicalPath = "Gehs.Poc.Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17537\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Gehs.Poc.Website\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GEHS.Poc.Db", "GEHS.Poc.Db\GEHS.Poc.Db.sqlproj", "{04422248-0E50-4788-886A-5A9896BE8BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEHS.Poc.Data", "GEHS.Poc.Data\GEHS.Poc.Data.csproj", "{0ACD6FC7-5FA8-43A6-8E4C-8D3C52A16B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEHS.Poc.Test", "GEHS.Poc.Test\GEHS.Poc.Test.csproj", "{0326F01A-2424-4524-8C1A-3FB699CA9496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBE0E86A-9E21-40B7-8D04-8394C7BC9D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE0E86A-9E21-40B7-8D04-8394C7BC9D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE0E86A-9E21-40B7-8D04-8394C7BC9D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE0E86A-9E21-40B7-8D04-8394C7BC9D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E01D0A-D714-484A-8A73-26B8DEFA754E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E01D0A-D714-484A-8A73-26B8DEFA754E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E01D0A-D714-484A-8A73-26B8DEFA754E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E01D0A-D714-484A-8A73-26B8DEFA754E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04422248-0E50-4788-886A-5A9896BE8BE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0ACD6FC7-5FA8-43A6-8E4C-8D3C52A16B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACD6FC7-5FA8-43A6-8E4C-8D3C52A16B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACD6FC7-5FA8-43A6-8E4C-8D3C52A16B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACD6FC7-5FA8-43A6-8E4C-8D3C52A16B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0326F01A-2424-4524-8C1A-3FB699CA9496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0326F01A-2424-4524-8C1A-3FB699CA9496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0326F01A-2424-4524-8C1A-3FB699CA9496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0326F01A-2424-4524-8C1A-3FB699CA9496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
