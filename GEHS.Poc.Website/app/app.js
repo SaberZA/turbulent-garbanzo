@@ -3,7 +3,8 @@
 
     var app = angular.module('gehs',
         ['mgcrea.ngStrap',
-         'ui.router']);
+         'ui.router',
+         'common.services']);
 
     app.config(['$stateProvider', '$urlRouterProvider', configRoutes]);
 
@@ -13,11 +14,13 @@
         $stateProvider
             .state('login', {
                 url: '/login',
-                templateUrl: 'app/login/partial-login.html'
+                templateUrl: 'app/login/partial-login.html',
+                controller: 'loginCtrl'
             })
             .state('user', {
                 url: '/user',
-                templateUrl: 'app/user/partial-user.html'
+                templateUrl: 'app/user/partial-user.html',
+                controller: 'userCtrl'
             });
     };
 }());

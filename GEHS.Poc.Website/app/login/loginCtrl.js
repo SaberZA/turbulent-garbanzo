@@ -3,11 +3,24 @@
 
     angular.module('gehs')
         .controller('loginCtrl',
-        [loginCtrl]);
+        ['$scope','$state','loginResource', loginCtrl]);
 
-    function loginCtrl() {
-        //var vm = this;
+    function loginCtrl($scope, $state, loginResource) {
+        $scope.userName = 'stevenv';
 
-        //vm.userName = 'stevenv';
+        $scope.login = function() {
+            var postLogin = $scope.userName;
+
+            loginResource.query(function (data) {
+                $scope.logins = data;
+
+                var validLogin = _.find($scope.logins, function (login) { return login.userName.toLowerCase() == postLogin.toLowerCase(); });
+
+                if (validLogin) {
+                    $state.go('user');
+                }
+            });
+        };
+
     };
 }());
