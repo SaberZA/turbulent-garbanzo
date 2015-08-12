@@ -1,9 +1,10 @@
 language: csharp
+solution: GEHS.Poc.sln
 
-env:
- global:
-  - EnableNuGetPackageRestore=true 
+install:
+  - sudo apt-get install nunit-console
+  - nuget restore GEHS.Poc.sln
 
 script:
  - xbuild /p:Configuration=Release GEHS.Poc.sln
- - .ci/nunit.sh GEHS.Poc.Test\bin\Release\GEHS.Poc.Test.dll
+ - nunit-console ./GEHS.Poc.Test/bin/Release/GEHS.Poc.Test.dll
