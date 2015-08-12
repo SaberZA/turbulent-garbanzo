@@ -1,5 +1,9 @@
 language: csharp
 
+env:
+ global:
+  - EnableNuGetPackageRestore=true 
+
 script:
  - xbuild /p:Configuration=Release GEHS.Poc.sln
  - .ci/nunit.sh GEHS.Poc.Test\bin\Release\GEHS.Poc.Test.dll
