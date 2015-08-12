@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
+using ProtoBuf;
 
 namespace GEHS.Poc.WebApi
 {
@@ -13,7 +14,7 @@ namespace GEHS.Poc.WebApi
             // Web API configuration and services
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
               new CamelCasePropertyNamesContractResolver();
-
+            
             config.EnableCors();
 
             // Web API routes

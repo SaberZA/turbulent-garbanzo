@@ -5,6 +5,6 @@
         ["ngResource"])
     .constant("appSettings",
     {
-        serverPath: "http://localhost:3639"
+        serverPath: "http://gehspoc.azurewebsites.net"
     });
 }());
