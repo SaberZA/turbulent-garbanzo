@@ -1,2 +1,5 @@
 language: csharp
-solution: GEHS.Poc.sln
+
+script:
+ - xbuild /p:Configuration=Release GEHS.Poc.sln
+ - .ci/nunit.sh GEHS.Poc.Test\bin\Release\GEHS.Poc.Test.dll
