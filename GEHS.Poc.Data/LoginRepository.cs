@@ -12,12 +12,12 @@ namespace GEHS.Poc.Data
     {
         private string _connectionString = "Data Source=gehs-poc.database.windows.net;Initial Catalog=Gehs-poc;Integrated Security=False;User ID=gehs_reader;Password=Durb@n2015;Connect Timeout=15;Encrypt=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public IEnumerable<Login> GetLogins()
+        public async Task<IEnumerable<Login>> GetLogins()
         {
             IEnumerable<Login> logins;
             using (var conn = new SqlConnection(_connectionString))
             {
-                logins = conn.Query<Login>("select * from dbo.Login");
+                logins = await conn.QueryAsync<Login>("select * from dbo.Login");
             }
             return logins;
         }

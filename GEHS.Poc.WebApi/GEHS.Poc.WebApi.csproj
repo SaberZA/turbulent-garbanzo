@@ -120,6 +120,8 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\gehspoc.pubxml" />
+    <None Include="Properties\PublishProfiles\gehspocNorthEu %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\gehspocNorthEu.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

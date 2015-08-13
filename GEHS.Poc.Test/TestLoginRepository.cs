@@ -8,14 +8,14 @@ namespace GEHS.Poc.Test
     public class TestLoginRepository
     {
         [Test]
-        public void GetLogins_GivenNothing_ShouldReturnLoginList()
+        public async void GetLogins_GivenNothing_ShouldReturnLoginList()
         {
             //---------------Set up test pack-------------------
             var loginRepository = new LoginRepository();
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------
-            var logins = loginRepository.GetLogins();
+            var logins = await loginRepository.GetLogins();
             //---------------Test Result -----------------------
             Assert.IsNotNull(logins);
             Assert.IsTrue(logins.Any());
