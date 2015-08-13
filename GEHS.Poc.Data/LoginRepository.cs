@@ -10,7 +10,7 @@ namespace GEHS.Poc.Data
 {
     public class LoginRepository
     {
-        private string _connectionString = "Data Source=gehs-poc.database.windows.net;Initial Catalog=Gehs-poc;Integrated Security=False;User ID=gehs_reader;Password=Durb@n2015;Connect Timeout=15;Encrypt=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string _connectionString = "Data Source=gehs-poc.database.windows.net;Initial Catalog=Gehs-poc;Integrated Security=False;User ID=gehs_reader;Password=Durb@n2015;Connect Timeout=15;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public async Task<IEnumerable<Login>> GetLogins()
         {
