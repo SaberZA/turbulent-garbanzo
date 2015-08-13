@@ -1,8 +1,9 @@
 language: csharp
 solution: GEHS.Poc.sln
+sudo: false
 
 install:
-  - sudo apt-get install nunit-console
+  - apt-get install nunit-console
   - nuget restore GEHS.Poc.sln
 
 script:
