@@ -7,10 +7,8 @@ addons:
     packages:
     - nunit-console
     
-install:
-  - nuget restore GEHS.Poc.sln
-
 script:
  - xbuild /p:Configuration=Release GEHS.Poc.sln
  - nunit-console ./GEHS.Poc.Test/bin/Release/GEHS.Poc.Test.dll
+ 
  
